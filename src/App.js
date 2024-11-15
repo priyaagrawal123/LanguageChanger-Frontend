@@ -8,7 +8,6 @@ import Page3 from "./components/Page3";
 import Navbar from "./components/Navbar";
 import Page4 from "./components/Page4";
 
-// Define routes with createBrowserRouter
 const router = createBrowserRouter([
   {
     path: "/navbar",

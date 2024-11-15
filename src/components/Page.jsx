@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import { motion } from "framer-motion";   //this is used for animation of welcome message
 import Navbar from "./Navbar";
 import image1 from "./image2.webp";
 import image2 from "./image6.jpeg";
 import image3 from "./image8.jpeg";
 import image4 from "./image10.png";
 
-
+//just in case if while fetching API if it doesnt work then this will work
 const translations = {
   en: {
     navbar: {
@@ -95,7 +95,7 @@ function Page() {
     }, 1000);
   };
 
-  const displayName = userName || "Priya";
+  const displayName = userName || "Priya";   
 
   return (
     <div
@@ -146,7 +146,6 @@ function Page() {
           </motion.span>
         ))}
         
-        {/* Use the translated 'explore' message here */}
         <p className="m-12 text-2xl font-semibold">
           {translation.content.explore}
         </p>

@@ -44,7 +44,7 @@ function Navbar({ language, setLanguage, translations }) {
                 className="absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white z-10"
               >
                 <div className="py-1">
-                 
+                 {/* english langugae */}
                   <button
                     onClick={() => setLanguage("en")}
                     className="text-gray-700 block px-4 py-2 text-sm rounded-full flex items-center"
@@ -52,7 +52,8 @@ function Navbar({ language, setLanguage, translations }) {
                     <span className="w-3 h-3 rounded-full bg-blue-500 mr-2"></span>
                     English-EN
                   </button>
-                  {/* Hindi option */}
+
+                  {/* hindi langugae -font english  */}
                   <button
                     onClick={() => setLanguage("hii")}
                     className="text-gray-700 block px-4 py-2 text-sm rounded-full flex items-center"
@@ -60,6 +61,7 @@ function Navbar({ language, setLanguage, translations }) {
                     <span className="w-3 h-3 rounded-full bg-blue-500 mr-2"></span>
                     HINDI-HI
                   </button>
+                  {/* hindi langugae */}
                   <button
                     onClick={() => setLanguage("hi")}
                     className="text-gray-700 block px-4 py-2 text-sm rounded-full flex items-center"
@@ -67,7 +69,7 @@ function Navbar({ language, setLanguage, translations }) {
                     <span className="w-3 h-3 rounded-full bg-blue-500 mr-2"></span>
                     हिंदी-HI
                   </button>
-                  {/* French option */}
+                  {/* french langugae */}
                   <button
                     onClick={() => setLanguage("fr")}
                     className="text-gray-700 block px-4 py-2 text-sm rounded-full flex items-center"
@@ -75,7 +77,7 @@ function Navbar({ language, setLanguage, translations }) {
                     <span className="w-3 h-3 rounded-full bg-blue-500 mr-2"></span>
                     Français-FR
                   </button>
-                  {/* Marathi option */}
+{/* marathi langugae */}
                   <button
                     onClick={() => setLanguage("mr")}
                     className="text-gray-700 block px-4 py-2 text-sm rounded-full flex items-center"

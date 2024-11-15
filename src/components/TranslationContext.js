@@ -12,10 +12,10 @@ export const TranslationProvider = ({ children }) => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`http://localhost:5000/hello?language=${language}`)
+      .get(`http://localhost:5000/hello?language=$[language]`)  //fetching api from backend using axios 
       .then((response) => {
         if (response.data.success) {
-          setTranslations(response.data); // Set translations to API response
+          setTranslations(response.data); 
         } else {
           setError(response.data.message);
           console.error("Error fetching translations:", response.data.message);
